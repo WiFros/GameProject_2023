@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Zlaepek/Scenes/Character joystick.unity
+    guid: 848be4e769043ff40a6399c8a320c907
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 0ad01439b0292034b92fc681640fec29,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: e823ee961c445d54aa4a2c76fcb7acaa, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: bfd182b02f9a9b949ae63b745f41d7f5, type: 2}
