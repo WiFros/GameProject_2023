@@ -5,22 +5,31 @@ using UnityEngine.UI;
 
 public class CharacterHP : MonoBehaviour
 {
-    // max 체력
-    public static int MAX_HP = 2;
+    // max 체력 UI
+    public static int MAX_HP = 5;
     // 최대 체력
-    public int totalHP = 3;
+    public int totalHP = 10;
+    // 현제 체력
+    [SerializeField] private int currentHP;
 
-    private int currentHP;
-
-    public GameObject[] lifeHeart = new GameObject[MAX_HP];
-
-    private Color HeartColor = new Color(255, 255, 255, 255);
-    private Color EmptyHeartColor = new Color(50, 50, 50, 136);
+    [SerializeField] private GameObject hp_display;
+    [SerializeField] private GameObject[] lifeHeart = new GameObject[MAX_HP];
 
     // 처음 체력
     void Start()
     {
+        for (int i = 0; i < MAX_HP; i++)
+        {
+            lifeHeart[i] = hp_display.transform.GetChild(1).gameObject.transform.GetChild(i).gameObject;
+        }
+
         currentHP = totalHP;
+        // currentHP = 1;
+        HPRender();
+    }
+
+    void Update()
+    {
         HPRender();
     }
 
@@ -46,18 +55,21 @@ public class CharacterHP : MonoBehaviour
 
     private void HPRender()
     {
-        for (int i = 1; i < totalHP; i++)
+        for (int i = 0; i < currentHP / 2; i++)
         {
-            if (i < currentHP)
-            {
-                lifeHeart[i-1].GetComponent<Image>().color = HeartColor;
-            }
-            else
-            {
-                lifeHeart[i-1].GetComponent<Image>().color = EmptyHeartColor;
-            }
+            lifeHeart[i].GetComponent<Image>().fillAmount = 1.0f;
+        }
+        if (currentHP % 2 > 0)
+        {
+            lifeHeart[currentHP / 2].GetComponent<Image>().fillAmount = 0.5f;
+        }
+        else if (currentHP != 10)
+        {
+            lifeHeart[currentHP / 2].GetComponent<Image>().fillAmount = 0.0f;
+        }
+        for (int i = Mathf.CeilToInt(currentHP / 2)+1; i < MAX_HP; i++)
+        {
+            lifeHeart[i].GetComponent<Image>().fillAmount = 0.0f;
         }
     }
-
-
 }
