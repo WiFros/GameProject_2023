@@ -19,11 +19,11 @@ MonoBehaviour:
   takeSaveScreenshots: 0
   saveScreenshots: 0
   screenshotResolutionFactor: 1
-  useProfiles: 0
+  useProfiles: 1
   maxSaves: 5
   orderSavesByUpdateTime: 0
   reloadSceneWhenLoading: 1
-  saveWithThreading: 0
+  saveWithThreading: 1
   saveAssetReferencesWithAddressables: 0
   saveLabels:
     defaultSaveLabel: Save
@@ -62,22 +62,22 @@ MonoBehaviour:
   disableFreeAimWhenDraggingPickUp: 0
   runConversationsWithKeys: 0
   clickUpInteractions: 0
-  defaultMouseClicks: 1
+  defaultMouseClicks: 0
   allowGameplayDuringConversations: 0
   walkToHotspotMarkers: 1
   dragThreshold: 0
   shareInventory: 0
-  inventoryDragDrop: 0
+  inventoryDragDrop: 1
   dragDropThreshold: 0
   allowInventoryInteractionsDuringConversations: 0
-  inventoryDropLook: 0
+  inventoryDropLook: 1
   inventoryDropLookNoDrag: 0
   inventoryInteractions: 1
   inventoryDisableLeft: 1
   allowDefaultInventoryInteractions: 0
   inventoryDisableUnhandled: 1
   inventoryDisableDefined: 1
-  inventoryInteractionsHaltPlayer: 0
+  inventoryInteractionsHaltPlayer: 1
   activeWhenHover: 0
   inventoryActiveEffect: 1
   inventoryPulseSpeed: 1
@@ -134,6 +134,17 @@ MonoBehaviour:
     axisThreshold: 0.2
     buttonType: 0
     hasUpgraded: 1
+  - label: 
+    ID: 2
+    inputName: 
+    enabledOnStart: 1
+    gameState: 0
+    gameStateFlags: 1
+    actionListAsset: {fileID: 0}
+    inputType: 0
+    axisThreshold: 0.2
+    buttonType: 0
+    hasUpgraded: 0
   freeAimTouchSpeed: 0.01
   dragWalkThreshold: 5
   dragRunThreshold: 20
@@ -157,7 +168,7 @@ MonoBehaviour:
   linearColorTextures: 0
   movingTurning: 3
   hotspotDetection: 1
-  closeInteractionMenusIfPlayerLeavesVicinity: 0
+  closeInteractionMenusIfPlayerLeavesVicinity: 1
   placeDistantHotspotsOnSeparateLayer: 1
   hotspotsInVicinity: 0
   hotspotIconDisplay: 0
@@ -176,20 +187,20 @@ MonoBehaviour:
     clickOffset: {x: 0, y: 0}
     frameSpeeds: []
     alwaysAnimate: 0
-  highlightMaterialPropertyOverride: _BaseClolr
+  highlightMaterialPropertyOverride: _BaseColor
   hotspotIconSize: 0.04
   playerFacesHotspots: 0
   onlyFaceHotspotOnSelect: 0
-  scaleHighlightWithMouseProximity: 0
+  scaleHighlightWithMouseProximity: 1
   highlightProximityFactor: 4
   occludeIcons: 0
   hideIconUnderInteractionMenu: 0
   hotspotDrawing: 0
   hideUnhandledHotspots: 0
   navMeshRaycastLength: 100
-  hotspotRaycastLength: 100
+  hotspotRaycastLength: 2
   moveableRaycastLength: 30
-  hotspotLayer: Default
+  hotspotLayer: DistantHotspot
   distantHotspotLayer: DistantHotspot
   navMeshLayer: NavMesh
   backgroundImageLayer: BackgroundImage
@@ -232,5 +243,5 @@ MonoBehaviour:
   defaultSpeechVolume: 1
   showDebugLogs: 0
   printActionCommentsInConsole: 0
-  actionCommentLogging: 0
+  actionCommentLogging: 2
   showActiveActionLists: 0

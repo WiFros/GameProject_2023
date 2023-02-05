@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2023Game_ActionsManager
   m_EditorClassIdentifier: 
   customFolderPaths:
-  - Object
+  - Jyoung/Script
   - 
   allFavouriteActionData: []
   displayActionsInInspector: 1
@@ -879,6 +879,12 @@ MonoBehaviour:
     category: 19
     title: Set timer
     description: Starts or stops a Timer
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: CheckIfGrounded
+    category: 20
+    title: Grounded Check
+    description: Check if the Player is grounded.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   defaultActionCategoryDatas: []

@@ -3958,10 +3958,10 @@ MonoBehaviour:
   maxAutoWidthFactor: 0.5
   relativeRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 15.91131
-    height: 39.379997
+    x: 1351.2101
+    y: 10.628136
+    width: 34.825
+    height: 103.07
   relativePosition: {x: 97, y: 9}
   numSlots: 1
   uiButton: {fileID: 0}
@@ -4449,10 +4449,10 @@ MonoBehaviour:
   maxAutoWidthFactor: 0.5
   relativeRect:
     serializedVersion: 2
-    x: 22.275835
-    y: 3.182262
-    width: 579.17163
-    height: 39.379997
+    x: 48.755
+    y: 6.9649997
+    width: 1267.63
+    height: 103.07
   relativePosition: {x: 0, y: 0}
   numSlots: 13
   uiSlots:
@@ -4928,7 +4928,7 @@ MonoBehaviour:
   title: Inventory
   manualSize: {x: 100, y: 12.60303}
   positionType: 1
-  manualPosition: {x: 945.5, y: 22.559423}
+  manualPosition: {x: 696.5, y: 59.045193}
   positionSmoothing: 0
   alignment: 0
   toggleKey: 
@@ -5004,10 +5004,10 @@ MonoBehaviour:
   biggestElementSize: {x: 0, y: 0}
   rect:
     serializedVersion: 2
-    x: 627.2738
+    x: 0
     y: 0
-    width: 636.4524
-    height: 45.118847
+    width: 1393
+    height: 118.090385
   showInFilter: 1
 --- !u!114 &4562282379564351110
 MonoBehaviour:
@@ -6077,10 +6077,10 @@ MonoBehaviour:
   maxAutoWidthFactor: 0.5
   relativeRect:
     serializedVersion: 2
-    x: 3.182262
-    y: 3.182262
-    width: 15.91131
-    height: 39.379997
+    x: 6.9649997
+    y: 6.9649997
+    width: 34.825
+    height: 103.07
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
@@ -6940,7 +6940,8 @@ MonoBehaviour:
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   anchor: 3
   selected: 0
-  optionsArray: []
+  optionsArray:
+  - Original
   cycleType: 0
   splitLanguageType: 0
   varID: 0
