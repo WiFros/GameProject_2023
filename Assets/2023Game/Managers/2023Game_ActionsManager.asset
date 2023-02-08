@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2023Game_ActionsManager
   m_EditorClassIdentifier: 
   customFolderPaths:
-  - Jyoung/Script
+  - Jyoung/ACScript
   - 
   allFavouriteActionData: []
   displayActionsInInspector: 1

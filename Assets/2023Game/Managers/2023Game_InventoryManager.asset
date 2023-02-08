@@ -78,4 +78,26 @@ MonoBehaviour:
   unhandledGive: {fileID: 0}
   recipes: []
   documents: []
-  objectives: []
+  objectives:
+  - ID: 0
+    title: "\uD14C\uC2A4\uD2B8 \uD018\uC2A4\uD2B8#0"
+    titleLineID: -1
+    description: "\uC774 \uD018\uC2A4\uD2B8\uB294 \uD14C\uC2A4\uD2B8\uC6A9\n\n[var:0]\n"
+    descriptionLineID: -1
+    perPlayer: 0
+    texture: {fileID: 0}
+    states:
+    - ID: 0
+      label: Started
+      labelLineID: -1
+      description: 
+      descriptionLineID: -1
+      stateType: 1
+    - ID: 1
+      label: Completed
+      labelLineID: -1
+      description: 
+      descriptionLineID: -1
+      stateType: 2
+    lockStateWhenComplete: 1
+    lockStateWhenFail: 1
