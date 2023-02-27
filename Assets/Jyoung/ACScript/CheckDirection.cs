@@ -11,6 +11,7 @@
 
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.TextCore.Text;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -27,13 +28,12 @@ namespace AC
         public override string Title { get { return "Direction Check"; } }
         public override string Description { get { return "Check if the Player is grounded."; } }
 
-        public string variableName;
         public override float Run()
         {
-            var directionInt = KickStarter.player.GetMoveDirection().magnitude;
-
-            Debug.Log(directionInt);
+            KickStarter.player.GetMoveDirection();
+     
             //GlobalVariables.GetVariable(variableName).IntegerValue = directionInt;
+
             return base.Run();
         }
 

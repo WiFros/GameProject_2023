@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="" />
+    <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_ActionsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_ActionsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_MenuManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_MenuManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_VariablesManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_VariablesManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jyoung/ACScript/CheckDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jyoung/ACScript/CheckDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jyoung/CustomScript/PushInteration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jyoung/CustomScript/PushInteration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jyoung/Scene/EP0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jyoung/Scene/EP0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Zlaepek/Scenes/Default UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Zlaepek/Scenes/Default UI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2K1sSGF4GVbIz0KfJ5jAulBtjDW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -13,22 +26,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="" />
       <created>1673153424468</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673153424468</updated>
       <workItem from="1673153429542" duration="4000" />
+      <workItem from="1677244143972" duration="127000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

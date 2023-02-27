@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customFolderPaths:
   - Jyoung/ACScript
+  - AdventureCreator/Scripts/Actions
   - 
   allFavouriteActionData: []
   displayActionsInInspector: 1
@@ -879,6 +880,12 @@ MonoBehaviour:
     category: 19
     title: Set timer
     description: Starts or stops a Timer
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: CheckDirection
+    category: 20
+    title: Direction Check
+    description: Check if the Player is grounded.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: CheckIfGrounded

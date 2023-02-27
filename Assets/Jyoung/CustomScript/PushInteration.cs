@@ -17,7 +17,7 @@ public class PushInteration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction = AC.Kick
+       
     }
     private void OnCollisionEnter(Collision collision)
     {

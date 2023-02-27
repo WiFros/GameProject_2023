@@ -35,7 +35,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Direction
     id: 1
-    type: 5
+    type: 1
     val: 0
     floatVal: 0
     textVal: 
@@ -54,7 +54,7 @@ MonoBehaviour:
     description: 
     showInFilter: 1
   varPresets: []
-  updateRuntime: 1
+  updateRuntime: 0
   popUpLabelData: []
   timers: []
   scrollPos: {x: 0, y: 0}
