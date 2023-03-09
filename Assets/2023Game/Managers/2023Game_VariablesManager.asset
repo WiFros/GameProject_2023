@@ -33,9 +33,9 @@ MonoBehaviour:
     popUpsLineID: -1
     description: 
     showInFilter: 1
-  - label: Direction
+  - label: Direction(left)
     id: 1
-    type: 1
+    type: 5
     val: 0
     floatVal: 0
     textVal: 
@@ -43,8 +43,28 @@ MonoBehaviour:
     gameObjectSaveReferences: 1
     objectVal: {fileID: 0}
     popUps: []
-    vector3Val: {x: 0, y: 0, z: 0}
-    link: 2
+    vector3Val: {x: -1, y: 0, z: 1}
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    canTranslate: 1
+    popUpID: 0
+    textValLineID: -1
+    popUpsLineID: -1
+    description: 
+    showInFilter: 1
+  - label: Direction(right)
+    id: 2
+    type: 5
+    val: 0
+    floatVal: 0
+    textVal: 
+    gameObjectVal: {fileID: 0}
+    gameObjectSaveReferences: 1
+    objectVal: {fileID: 0}
+    popUps: []
+    vector3Val: {x: 1, y: 0, z: 1}
+    link: 0
     pmVar: 
     updateLinkOnStart: 0
     canTranslate: 1
@@ -54,7 +74,7 @@ MonoBehaviour:
     description: 
     showInFilter: 1
   varPresets: []
-  updateRuntime: 0
+  updateRuntime: 1
   popUpLabelData: []
   timers: []
   scrollPos: {x: 0, y: 0}

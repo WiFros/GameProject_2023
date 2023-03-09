@@ -99,5 +99,5 @@ MonoBehaviour:
       description: 
       descriptionLineID: -1
       stateType: 2
-    lockStateWhenComplete: 1
+    lockStateWhenComplete: 0
     lockStateWhenFail: 1
