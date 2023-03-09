@@ -36,9 +36,27 @@ MonoBehaviour:
   sceneAttributes: []
   actionListOnStart: {fileID: 0}
   blackOutWhenSkipping: 0
-  playerSwitching: 1
+  playerSwitching: 0
   player: {fileID: 1310539395, guid: 7d032d08018cb41c3945030e2496018a, type: 3}
-  players: []
+  players:
+  - playerOb: {fileID: 5119129210889421723, guid: 07232f23e60754837a3957517f2d3638,
+      type: 3}
+    ID: 0
+    isDefault: 1
+    startingSceneIndex: 0
+    chooseSceneBy: 0
+    startingSceneName: 
+    useSceneDefaultPlayerStart: 1
+    startingPlayerStartID: 0
+  - playerOb: {fileID: 5477675098760306383, guid: 89a53154c00f446d1869b8e73afb62d4,
+      type: 3}
+    ID: 1
+    isDefault: 0
+    startingSceneIndex: 0
+    chooseSceneBy: 0
+    startingSceneName: 
+    useSceneDefaultPlayerStart: 1
+    startingPlayerStartID: 0
   movementMethod: 1
   inputMethod: 0
   simulatedCursorMoveSpeed: 4
