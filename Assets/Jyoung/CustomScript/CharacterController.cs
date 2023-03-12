@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using AC;
 
-public class PushInteration : MonoBehaviour
+public class PushInteraction : MonoBehaviour
 {
     public float interactionDistance = 2.0f;
 
     private GameObject currentObject;
+
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +40,7 @@ public class PushInteration : MonoBehaviour
         if (pushable != null)
         {
             Vector3 direction = transform.forward;
+            
             pushable.Push(direction);
         }
     }
