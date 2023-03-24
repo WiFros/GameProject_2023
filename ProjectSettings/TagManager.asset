@@ -6,6 +6,10 @@ TagManager:
   tags:
   - BackgroundCamera
   - Interactable
+  - Ground
+  - Item
+  - Trap
+  - Destroy
   layers:
   - Default
   - TransparentFX
@@ -13,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Item
   - 
   - NavMesh
   - BackgroundImage

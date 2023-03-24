@@ -2,20 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_ActionsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_ActionsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_MenuManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_MenuManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_VariablesManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2023Game/Managers/2023Game_VariablesManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jyoung/ACScript/CheckDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jyoung/ACScript/CheckDirection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jyoung/CustomScript/PushInteration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jyoung/CustomScript/PushInteration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jyoung/Scene/EP0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jyoung/Scene/EP0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Zlaepek/Scenes/Default UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Zlaepek/Scenes/Default UI.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Food_M/pineapple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Food_M/pineapple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BearDefault.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BearDefault.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene/EP1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/EP1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Item.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Inventory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Friend Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Friend Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Player Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Player Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/IItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/ItemPickUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/SimpleCharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -26,14 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,10 +61,39 @@
       <updated>1673153424468</updated>
       <workItem from="1673153429542" duration="4000" />
       <workItem from="1677244143972" duration="127000" />
+      <workItem from="1679215017541" duration="666000" />
+      <workItem from="1679217313614" duration="40000" />
+      <workItem from="1679217428343" duration="1206000" />
+      <workItem from="1679219618270" duration="72000" />
+      <workItem from="1679219698922" duration="3862000" />
+      <workItem from="1679298769430" duration="30000" />
+      <workItem from="1679298869926" duration="22000" />
+      <workItem from="1679298900353" duration="1502000" />
+      <workItem from="1679300859149" duration="248000" />
+      <workItem from="1679301200408" duration="499000" />
+      <workItem from="1679301935263" duration="403000" />
+      <workItem from="1679302395329" duration="3176000" />
+      <workItem from="1679380991666" duration="448000" />
+      <workItem from="1679381483362" duration="758000" />
+      <workItem from="1679581836541" duration="2112000" />
+      <workItem from="1679589773171" duration="163000" />
+      <workItem from="1679590307737" duration="9828000" />
+      <workItem from="1679641258994" duration="2197000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
