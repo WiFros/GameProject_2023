@@ -1,18 +1,92 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public List<Item> items = new List<Item>();
+    public static bool invectoryActivated = false;  // 인벤토리 활성화 여부. true가 되면 카메라 움직임과 다른 입력을 막을 것이다.
 
-    public void AddItem(Item item)
+    [SerializeField]
+    private GameObject go_InventoryBase; // Inventory_Base 이미지
+    [SerializeField] 
+    private GameObject go_SlotsParent;  // Slot들의 부모인 Grid Setting 
+    private Slot[] slots;  // 슬롯들 배열
+    [SerializeField] private Button discardButton;
+    private Slot selectedSlot;
+
+    void Start()
     {
-        items.Add(item);
+        slots = go_SlotsParent.GetComponentsInChildren<Slot>();
+        //discardButton.onClick.AddListener(() => DiscardItem());
+    }
+    void Update()
+    {
+        TryOpenInventory();
+    }
+    public void SetSelectedSlot(Slot _slot)
+    {
+        selectedSlot = _slot;
+        //selectedSlot.
+    }
+    public void DiscardItem()
+    {
+        if (selectedSlot != null && selectedSlot.item != null)
+        {
+            Debug.Log("Discard : "+selectedSlot.item.itemName);
+            //FindObjectOfType<InputNumber>().Call();
+            selectedSlot.OnClickedDrop();
+        }
+    }
+    
+    private void TryOpenInventory()
+    {
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            invectoryActivated = !invectoryActivated;
+
+            if (invectoryActivated)
+                OpenInventory();
+            else
+                CloseInventory();
+
+        }
     }
 
-    public void RemoveItem(Item item)
+    private void OpenInventory()
     {
-        items.Remove(item);
+        go_InventoryBase.SetActive(true);
+    }
+
+    private void CloseInventory()
+    {
+        go_InventoryBase.SetActive(false);
+    }
+
+    public void AcquireItem(Item _item, int _count = 1)
+    {
+        if(Item.ItemType.Equipment != _item.itemType)
+        {
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (slots[i].item != null)  // null 이라면 slots[i].item.itemName 할 때 런타임 에러 나서
+                {
+                    if (slots[i].item.itemName == _item.itemName)
+                    {
+                        slots[i].SetSlotCount(_count);
+                        return;
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].item == null)
+            {
+                slots[i].AddItem(_item, _count);
+                return;
+            }
+        }
     }
 }

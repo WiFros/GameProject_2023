@@ -8,13 +8,9 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float pickupRange = 3f;
     [SerializeField] private LayerMask itemLayer;
     [SerializeField] private TextMeshProUGUI actionText;
-    private Inventory inventory;
+    [SerializeField] private Inventory inventory;
     private ItemPickUp currentItem;
-
-    private void Start()
-    {
-        inventory = GetComponent<Inventory>();
-    }
+    
     private void Update()
     {
         CheckForItem();
@@ -51,6 +47,7 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && currentItem != null)
         {
             Debug.Log(currentItem.item.itemName + " 획득했습니다.");
+            inventory.AcquireItem(currentItem.item);
             Destroy(currentItem.gameObject);
             actionText.gameObject.SetActive(false);
             currentItem = null;

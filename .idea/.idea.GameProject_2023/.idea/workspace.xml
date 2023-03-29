@@ -3,25 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Food_M/pineapple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Food_M/pineapple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BearDefault.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BearDefault.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FX/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur stable fine hdr ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FX/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur stable fine hdr ab.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/books-pile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/books-pile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/boy-beach.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/boy-beach.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Vehicles_M/baby-carriage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Vehicles_M/baby-carriage.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Animals_T/horse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Animals_T/horse.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Tools_T/axe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Tools_T/axe.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/EP1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/EP1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Item.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Item.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Inventory/PineApple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Inventory/PineApple.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Inventory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Friend Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Friend Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Player Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Player Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/DragSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/IItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/InputNumber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/SelectedSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ItemPickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/SimpleCharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -78,7 +75,11 @@
       <workItem from="1679581836541" duration="2112000" />
       <workItem from="1679589773171" duration="163000" />
       <workItem from="1679590307737" duration="9828000" />
-      <workItem from="1679641258994" duration="2197000" />
+      <workItem from="1679641258994" duration="3665000" />
+      <workItem from="1679744504510" duration="7000" />
+      <workItem from="1679745485889" duration="13685000" />
+      <workItem from="1679813280916" duration="6546000" />
+      <workItem from="1679821790250" duration="16879000" />
     </task>
     <servers />
   </component>
