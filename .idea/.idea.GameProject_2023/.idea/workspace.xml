@@ -1,86 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Script/NPC/NPC.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/NPC/NPC.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/List_Completed.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/List_Completed.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/List_Progressed.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/List_Progressed.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/QuestItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/QuestItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/QuestUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/QuestUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Reward.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Reward.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/EP1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/EP1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Dialogue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Dialogue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/DialogueManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/DialogueManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GroundPhisics.physicMaterial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GroundPhisics.physicMaterial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ItemPickup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/QuestManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/QuestManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/SimpleCharacterMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/SimpleCharacterMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/StationCameraFollow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/StationCameraFollow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ZeroFiction.physicMaterial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ZeroFiction.physicMaterial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/itemInter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/itemInter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/GUI PRO Kit - Casual Game/Scenes/DemoScene_(v2.0).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GUI PRO Kit - Casual Game/Scenes/DemoScene_(v2.0).unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_base.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_base.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_grace.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_grace.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_grace_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_grace_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_grace_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_grace_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_ground_0.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_ground_0.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_send_0.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_send_0.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_send_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Cube_send_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Friend.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Friend.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefeb/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Dialogue/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/NPC/NPCController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/NPC/NPCController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/QuestGiver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/QuestGiver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Quest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Quest.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f89d5395-5dce-4d27-be5b-f081b72b37e6" />
+        <option name="url" value="https://github.com/WiFros/GameProject_2023.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Character/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/DragSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/IItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/InputNumber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/SelectedSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/Slot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/NPC/NPC.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/QuestGiver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/QuestItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/QuestUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/Reward.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/GUI PRO Kit - Fantasy RPG/Scripts/PanelFantasyRPG.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2K1sSGF4GVbIz0KfJ5jAulBtjDW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/jeoungyoung_park/.local/share/Symbols/src&quot;
+    ]
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,6 +148,13 @@
       <workItem from="1680853060831" duration="59000" />
       <workItem from="1680853138527" duration="3330000" />
       <workItem from="1681040035929" duration="598000" />
+      <workItem from="1681626610136" duration="3130000" />
+      <workItem from="1682158671272" duration="226000" />
+      <workItem from="1682158953310" duration="2896000" />
+      <workItem from="1682176594797" duration="1833000" />
+      <workItem from="1682227884577" duration="7245000" />
+      <workItem from="1682662597957" duration="140000" />
+      <workItem from="1682662768801" duration="17340000" />
     </task>
     <servers />
   </component>
@@ -139,5 +171,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
