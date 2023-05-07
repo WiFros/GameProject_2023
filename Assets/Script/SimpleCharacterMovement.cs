@@ -11,6 +11,8 @@ public class SimpleCharacterMovement : MonoBehaviour
     private Rigidbody rb;
     private Animator animator;
 
+    private bool isActivated;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -24,10 +26,10 @@ public class SimpleCharacterMovement : MonoBehaviour
 
     void Update()
     {
-        if (isGrounded)
+        if (isGrounded && isActivated)
         {
-            float x = Input.GetAxis("Horizontal");
-            float z = Input.GetAxis("Vertical");
+            float x = Input.GetAxisRaw("Horizontal");
+            float z = Input.GetAxisRaw("Vertical");
 
             Vector3 moveDir = (mainCamera.forward * z + mainCamera.right * x).normalized;
             moveDir.y = 0;
@@ -51,6 +53,11 @@ public class SimpleCharacterMovement : MonoBehaviour
                 animator.SetTrigger("isJumping");
             }
         }
+    }
+
+    public void SetActive(bool value)
+    {
+        isActivated = value;
     }
 
     void OnCollisionStay(Collision collision)

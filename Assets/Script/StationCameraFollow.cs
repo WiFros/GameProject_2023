@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StationCameraFollow : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     private Vector3 previousTargetPosition;
     private Vector3 positionOffset;
     private Vector3 rotationOffset;
@@ -22,12 +22,17 @@ public class StationCameraFollow : MonoBehaviour
             return;
         }
 
-        transform.SetPositionAndRotation(positionOffset, Quaternion.Euler(rotationOffset));
+        transform.SetPositionAndRotation(previousTargetPosition + positionOffset, Quaternion.Euler(rotationOffset));
     }
 
     public void SetCameraOffset(Vector3 pos, Vector3 rot)
     {
         positionOffset = pos;
         rotationOffset = rot;
+    }
+
+    public void SetTarget(Transform transform)
+    {
+        target = transform;
     }
 }
