@@ -127,7 +127,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler,IBeginDragHandler,IDragH
             if (itemCount <= 0)
                 ClearSlot();
         }
-    
+        public int GetSlotItemCount()
+        {
+            return itemCount;
+        }
+
         // 해당 슬롯 하나 삭제
         private void ClearSlot()
         {

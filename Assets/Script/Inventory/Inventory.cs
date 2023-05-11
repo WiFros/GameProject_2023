@@ -89,4 +89,19 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    public bool HasEnoughItems(string itemName, int requiredAmount)
+    {
+        int count = 0;
+
+        foreach (var slot in slots)
+        {
+            if (slot.item != null && slot.item.itemName == itemName)
+            {
+                count += slot.GetSlotItemCount();
+            }
+        }
+
+        return count >= requiredAmount;
+    }
+
 }

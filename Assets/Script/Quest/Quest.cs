@@ -2,6 +2,15 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum QuestState
+{
+    NotAvailable,
+    QuestAvailable,
+    QuestInProgress,
+    QuestCompletable,
+    QuestCompleted
+}
+
 [CreateAssetMenu(fileName = "NewQuest", menuName = "Quests/Create new quest", order = 1)]
 [System.Serializable]
 public class Quest : ScriptableObject
@@ -15,6 +24,7 @@ public class Quest : ScriptableObject
     public List<Reward> rewards;
     public List<string> prerequisiteQuests;
     public Dialogue questDialogue;
+    public QuestState questState;
     public event Action OnQuestProgressChanged;
     public Quest()
     {

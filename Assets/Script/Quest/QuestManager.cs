@@ -4,6 +4,13 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     public List<Quest> quests;
+    public static QuestManager instance;
+    private HashSet<Quest> completedQuests;
+    public Inventory inventory;
+    private void Start()
+    {
+        completedQuests = new HashSet<Quest>();
+    }
     
     public void UpdateQuestProgress(Quest quest, int progress)
     {
@@ -26,10 +33,37 @@ public class QuestManager : MonoBehaviour
         {
             GrantReward(reward);
         }
+        completedQuests.Add(quest);
     }
-
+    public bool IsQuestCompleted(Quest quest)
+    {
+        return completedQuests.Contains(quest);
+    }
     private void GrantReward(Reward reward)
     {
         // Grant the reward based on its type
     }
+    public void CheckAndUpdateQuest(Quest quest, string itemId, int requiredAmount)
+    {
+        if (quest.questState == QuestState.QuestInProgress)
+        {
+            if (inventory.HasEnoughItems(itemId, requiredAmount))
+            {
+                quest.questState = QuestState.QuestCompletable;
+            }
+        }
+    }
+    public void AddQuest(Quest newQuest)
+    {
+        if (!quests.Contains(newQuest))
+        {
+            quests.Add(newQuest);
+        }
+        else
+        {
+            Debug.LogWarning("이미 퀘스트 목록에 있는 퀘스트입니다: " + newQuest.name);
+        }
+    }
+
+
 }
