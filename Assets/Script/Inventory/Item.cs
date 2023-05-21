@@ -14,12 +14,16 @@ public class Item : ScriptableObject
         Quest,
         Etc
     }
-    
+    public string ID { get; private set; }
     public string itemName;
     public ItemType itemType;
     public Sprite itemImage;
     public GameObject itemPrefab;
-    
+
+    private void Awake()
+    {
+        ID = System.Guid.NewGuid().ToString();
+    }
     public virtual void Use()
     {
         Debug.Log(itemName + "을 사용합니다.");

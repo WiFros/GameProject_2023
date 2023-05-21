@@ -14,7 +14,21 @@ public class Inventory : MonoBehaviour
     private Slot[] slots;  // 슬롯들 배열
     [SerializeField] private Button discardButton;
     private Slot selectedSlot;
-
+    private Dictionary<string, Slot> inventorySlots = new Dictionary<string, Slot>();
+    public static Inventory Instance { get; private set; }  // 싱글톤 인스턴스
+    void Awake() 
+    {
+        // 싱글톤 구현부분
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         slots = go_SlotsParent.GetComponentsInChildren<Slot>();
@@ -65,6 +79,15 @@ public class Inventory : MonoBehaviour
 
     public void AcquireItem(Item _item, int _count = 1)
     {
+        /*if(Item.ItemType.Equipment != _item.itemType)
+        {
+            if (inventorySlots.ContainsKey(_item.ID))
+            {
+                inventorySlots[_item.ID].SetSlotCount(_count);
+                return;
+            }
+        }*/
+        
         if(Item.ItemType.Equipment != _item.itemType)
         {
             for (int i = 0; i < slots.Length; i++)
@@ -89,9 +112,9 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-    public bool HasEnoughItems(string itemName, int requiredAmount)
+    public bool HasEnoughItems(Item item, int requiredAmount)
     {
-        int count = 0;
+        /*int count = 0;
 
         foreach (var slot in slots)
         {
@@ -101,7 +124,26 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        return count >= requiredAmount;
+        return count >= requiredAmount;*/
+        return inventorySlots.ContainsKey(item.ID) && inventorySlots[item.ID].GetSlotItemCount() >= requiredAmount;
+    }
+    public bool CheckItem(Item item, int amount)
+    {
+        return HasEnoughItems(item, amount);
     }
 
+    public void RemoveItem(Item item, int amount)
+    {
+        if(HasEnoughItems(item, amount)) {
+            inventorySlots[item.ID].SetSlotCount(-amount);
+            
+            if(inventorySlots[item.ID].GetSlotItemCount() <= 0) {
+                inventorySlots.Remove(item.ID);
+            }
+        }
+        else {
+            Debug.Log("Not enough items to remove.");
+        }
+    }
+    
 }

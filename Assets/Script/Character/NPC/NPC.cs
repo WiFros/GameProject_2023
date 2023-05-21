@@ -40,7 +40,7 @@ public class NPC : MonoBehaviour
     public Dialogue dialogue;
     
     // 퀘스트 관리자와 NPC에 할당된 퀘스트, 인벤토리
-    public QuestManager questManager;
+    //public QuestManager questManager;
     public Quest assignedQuest;
     public Inventory inventory;
 
@@ -149,17 +149,22 @@ public class NPC : MonoBehaviour
         {
             case NPCState.QuestAvailable:
                 dialogueTrigger.TriggerDialogue();
-                questManager.AddQuest(assignedQuest);
-                currentState = NPCState.QuestInProgress;
+                assignedQuest.questState = QuestState.QuestInProgress; // 퀘스트 상태를 진행 중으로 변경
+                QuestManager.instance.AddQuest(assignedQuest);
                 break;
             case NPCState.QuestInProgress:
                 dialogueTrigger.TriggerDialogue();
-                
-                // 퀘스트 진행 중일 때의 로직을 구현하세요.
+                // 여기에서 퀘스트 진행을 확인하고 필요하다면 상태를 업데이트 합니다.
+                if (inventory.CheckItem(assignedQuest.requiredItem, assignedQuest.targetProgress))
+                {
+                    assignedQuest.questState = QuestState.QuestCompletable;
+                }
                 break;
             case NPCState.QuestCompletable:
                 dialogueTrigger.TriggerDialogue();
-                // 퀘스트 완료 가능할 때의 로직을 구현하세요.
+                // 퀘스트 완료
+                inventory.RemoveItem(assignedQuest.requiredItem, assignedQuest.targetProgress);
+                assignedQuest.questState = QuestState.QuestCompleted;
                 break;
             case NPCState.QuestCompleted:
                 dialogueTrigger.TriggerDialogue();

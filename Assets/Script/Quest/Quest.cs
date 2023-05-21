@@ -25,6 +25,7 @@ public class Quest : ScriptableObject
     public List<string> prerequisiteQuests;
     public Dialogue questDialogue;
     public QuestState questState;
+    public Item requiredItem;
     public event Action OnQuestProgressChanged;
     public Quest()
     {

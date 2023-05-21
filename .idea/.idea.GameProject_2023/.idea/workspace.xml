@@ -5,89 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="퀘스트창 완성">
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/LICENSE.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/README.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo/DemoScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo/DemoScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo/DialogueParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo/DialogueParser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo/Prefab/ButtonPrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/Samples/DialogueSystemDemo/Prefab/ButtonPrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Graph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Graph/NodeSearchWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Graph/NodeSearchWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Graph/StoryGraph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Graph/StoryGraph.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Graph/StoryGraphView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Graph/StoryGraphView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/GraphSaveUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/GraphSaveUtility.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Nodes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Nodes/DialogueNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Nodes/DialogueNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Resources/NarrativeGraph.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Resources/NarrativeGraph.uss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Resources/Node.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Resources/Node.uss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Subtegral.DialogueSystem.Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Editor/Subtegral.DialogueSystem.Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/CommentBlockData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/CommentBlockData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/DialogueContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/DialogueContainer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/DialogueNodeData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/DialogueNodeData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/ExposedProperty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/ExposedProperty.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/NodeLinkData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/NodeLinkData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/Subtegral.DialogueSystem.Runtime.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/com.subtegral.dialoguesystem/Runtime/Subtegral.DialogueSystem.Runtime.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeBasedDialogueSystem/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/ItemDetecter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/ItemDetecter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/NPCDetecter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/NPCDetecter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Dialogue/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Lindas_Quest1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Lindas_Quest1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/size.FBX.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/size.FBX.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/tree.FBX.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/tree.FBX.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/tree.max" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/tree.max.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/무제 폴더.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/무제 폴더/test.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/무제 폴더/test.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/NewQuest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/NewQuest.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BasicMaleDefault.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BasicMaleDefault.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene/EP1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/EP1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/CharacterController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/CharacterController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/SimpleCharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/SimpleCharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPC.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Inventory/Slot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Slot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NPC.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NPC/NPC.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NPC/NPC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Inventory/SelectedSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Inventory/SelectedSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/Lindas_Quest1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/Lindas_Quest1.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,26 +65,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/jeoungyoung_park/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/Users/jeoungyoung_park/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -208,6 +136,11 @@
       <workItem from="1682692691308" duration="5197000" />
       <workItem from="1683375375452" duration="11608000" />
       <workItem from="1683816253538" duration="744000" />
+      <workItem from="1683817003749" duration="804000" />
+      <workItem from="1684059615670" duration="649000" />
+      <workItem from="1684657742727" duration="257000" />
+      <workItem from="1684658018040" duration="1466000" />
+      <workItem from="1684659515663" duration="5533000" />
     </task>
     <task id="LOCAL-00001" summary="퀘스트창 완성">
       <created>1682692886435</created>

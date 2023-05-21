@@ -7,6 +7,18 @@ public class QuestManager : MonoBehaviour
     public static QuestManager instance;
     private HashSet<Quest> completedQuests;
     public Inventory inventory;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Debug.LogWarning("Instance already exists, destroying object!");
+            Destroy(this);
+        }
+    }
     private void Start()
     {
         completedQuests = new HashSet<Quest>();
@@ -43,11 +55,11 @@ public class QuestManager : MonoBehaviour
     {
         // Grant the reward based on its type
     }
-    public void CheckAndUpdateQuest(Quest quest, string itemId, int requiredAmount)
+    public void CheckAndUpdateQuest(Quest quest, Item item, int requiredAmount)
     {
         if (quest.questState == QuestState.QuestInProgress)
         {
-            if (inventory.HasEnoughItems(itemId, requiredAmount))
+            if (inventory.HasEnoughItems(item, requiredAmount))
             {
                 quest.questState = QuestState.QuestCompletable;
             }
@@ -64,6 +76,5 @@ public class QuestManager : MonoBehaviour
             Debug.LogWarning("이미 퀘스트 목록에 있는 퀘스트입니다: " + newQuest.name);
         }
     }
-
 
 }

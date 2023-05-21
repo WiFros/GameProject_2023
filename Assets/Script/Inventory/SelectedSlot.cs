@@ -18,7 +18,6 @@ public class SelectedSlot : MonoBehaviour
 
     public void SelSetImage(Image _image)
     {
-        Debug.Log("1111111");
         imageItem.sprite = _image.sprite;
         SetColor(1);
     }
