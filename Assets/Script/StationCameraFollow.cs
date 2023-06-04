@@ -16,11 +16,7 @@ public class StationCameraFollow : MonoBehaviour
     
     private void Update()
     {
-        if (target.position != previousTargetPosition)
-        {
-            previousTargetPosition = target.position;
-            return;
-        }
+        previousTargetPosition = target.position;
 
         transform.SetPositionAndRotation(previousTargetPosition + positionOffset, Quaternion.Euler(rotationOffset));
     }
