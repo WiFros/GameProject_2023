@@ -50,6 +50,7 @@ public class SimpleCharacterMovement : MonoBehaviour
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // 위로 힘을 가해 점프
                 isGrounded = false; // 땅에서 벗어남
                 animator.SetTrigger("isJumping"); // 점프 애니메이션 활성화
+                SoundManager.instance.PlaySoundEffect("Tag2");
             }
         }
     }
