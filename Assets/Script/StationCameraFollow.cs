@@ -17,8 +17,13 @@ public class StationCameraFollow : MonoBehaviour
     private void Update()
     {
         previousTargetPosition = target.position;
+        if (target.position != previousTargetPosition)
+        {
+            previousTargetPosition = target.position;
+            //return;
+        }
 
-        transform.SetPositionAndRotation(previousTargetPosition + positionOffset, Quaternion.Euler(rotationOffset));
+        transform.SetPositionAndRotation(Vector3.Lerp(transform.position, previousTargetPosition + positionOffset, 10.0f*Time.deltaTime), Quaternion.Lerp(transform.rotation, Quaternion.Euler(rotationOffset), 5.0f * Time.deltaTime));
     }
 
     public void SetCameraOffset(Vector3 pos, Vector3 rot)
