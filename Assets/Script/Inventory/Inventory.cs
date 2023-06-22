@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,8 +15,12 @@ public class Inventory : MonoBehaviour
     private Slot[] slots;  // 슬롯들 배열
     [SerializeField] private Button discardButton;
     private Slot selectedSlot;
+    public InputNumber theInputNumber;
     private Dictionary<string, Slot> inventorySlots = new Dictionary<string, Slot>();
     public static Inventory Instance { get; private set; }  // 싱글톤 인스턴스
+    public event Action<Item,int> OnItemAdded;
+    public event Action<Item,int> OnItemRemoved;
+    
     void Awake() 
     {
         // 싱글톤 구현부분
@@ -45,6 +50,7 @@ public class Inventory : MonoBehaviour
     }
     public void DiscardItem()
     {
+        theInputNumber.gameObject.SetActive(true);
         if (selectedSlot != null && selectedSlot.item != null)
         {
             Debug.Log("Discard : "+selectedSlot.item.itemName);
@@ -87,7 +93,8 @@ public class Inventory : MonoBehaviour
                 return;
             }
         }*/
-        
+        //이벤트 발생
+        OnItemAdded?.Invoke(_item, 1);  // 한 번에 하나의 아이템이 추가된다고 가정
         if(Item.ItemType.Equipment != _item.itemType)
         {
             for (int i = 0; i < slots.Length; i++)
@@ -111,6 +118,7 @@ public class Inventory : MonoBehaviour
                 return;
             }
         }
+        
     }
     public bool HasEnoughItems(Item item, int requiredAmount)
     {
@@ -134,11 +142,16 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(Item item, int amount)
     {
+        //이벤트 발생
+        OnItemRemoved?.Invoke(item, amount);
+        
         if(HasEnoughItems(item, amount)) {
+            Debug.Log("Remove item");
             inventorySlots[item.ID].SetSlotCount(-amount);
             
             if(inventorySlots[item.ID].GetSlotItemCount() <= 0) {
                 inventorySlots.Remove(item.ID);
+                Debug.Log("Remove item from inventorySlots");
             }
         }
         else {

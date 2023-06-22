@@ -16,7 +16,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler,IBeginDragHandler,IDragH
         private TextMeshProUGUI text_Count;
         [SerializeField]
         private GameObject go_CountImage;
-        private InputNumber theInputNumber;
+        public InputNumber theInputNumber;
         public Button dropButton;
         private Slot currentSlot = null;
         
@@ -33,6 +33,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler,IBeginDragHandler,IDragH
             //Debug.Log("Drop1");
             if(SelectedSlot.instance.selectSlot != null)
             {
+                theInputNumber = FindObjectOfType<InputNumber>();
                 //Debug.Log("Drop2");
                 theInputNumber.Call();
             }

@@ -15,13 +15,14 @@ MonoBehaviour:
   id: 8c931375-7923-49f0-ad39-f297557e5788
   name: "\uB9B0\uB2E4\uC758 \uBD80\uD0C1 #1"
   description: "\uB9B0\uB2E4\uAC00 \uD30C\uC778\uC560\uD50C\uC744 3\uAC1C \uBD80\uD0C1\uD588\uB2E4."
-  isNew: 1
-  isCompleted: 0
+  isNew: 0
+  isCompleted: 1
   targetProgress: 3
   rewards: []
   prerequisiteQuests: []
   questDialogue:
     name: 
     sentences: []
-  questState: 1
-  _currentProgress: 0
+  questState: 4
+  requiredItem: {fileID: 11400000, guid: 94c1aa498e76347348f5f55abe858053, type: 2}
+  _currentProgress: 3

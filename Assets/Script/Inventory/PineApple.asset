@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: PineApple
   itemType: 2
-  itemImage: {fileID: 21300000, guid: bfe6206424fbc422ab2e36383b5b6f50, type: 3}
+  itemImage: {fileID: 21300000, guid: e64001f43e5cc4ce5a2f9180a4134551, type: 3}
   itemPrefab: {fileID: 8872198499453941486, guid: c160feac211ed464f8eb95a523999355,
     type: 3}
+  description: "\uC2E0\uC120\uD55C \uD30C\uC778\uC560\uD50C\uC774\uB2E4. \uBA39\uC73C\uBA74
+    \uB9DB\uC788\uC744\uAC70 \uAC19\uB2E4."

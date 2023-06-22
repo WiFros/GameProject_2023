@@ -22,8 +22,33 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         completedQuests = new HashSet<Quest>();
+        inventory.OnItemAdded += UpdateQuestsOnItemAdded;
+        inventory.OnItemRemoved += UpdateQuestsOnItemRemoved;
     }
-    
+
+    private void UpdateQuestsOnItemAdded(Item item, int amount)
+    {
+        // Loop through the quests to update them.
+        foreach (Quest quest in quests)
+        {
+            if (quest.requiredItem == item && quest.questState == QuestState.QuestInProgress)
+            {
+                UpdateQuestProgress(quest, amount);
+            }
+        }
+    }
+    private void UpdateQuestsOnItemRemoved(Item item, int amount)
+    {
+        // Loop through the quests to update them.
+        foreach (Quest quest in quests)
+        {
+            if (quest.requiredItem == item && quest.questState == QuestState.QuestCompletable)
+            {
+                quest.questState = QuestState.QuestInProgress;
+            }
+        }
+    }
+
     public void UpdateQuestProgress(Quest quest, int progress)
     {
         if (!quest.isCompleted)
@@ -32,20 +57,29 @@ public class QuestManager : MonoBehaviour
 
             if (quest.currentProgress >= quest.targetProgress)
             {
-                CompleteQuest(quest);
+                quest.questState = QuestState.QuestCompletable;
             }
         }
     }
 
-    private void CompleteQuest(Quest quest)
+    public void CompleteQuest(Quest quest)
     {
-        quest.isCompleted = true;
-
-        foreach (Reward reward in quest.rewards)
+        if (quest.questState == QuestState.QuestCompletable)
         {
-            GrantReward(reward);
+            quest.isCompleted = true;
+            inventory.RemoveItem(quest.requiredItem, quest.targetProgress);  // Assume that 1 is the required amount of the item
+
+            foreach (Reward reward in quest.rewards)
+            {
+                GrantReward(reward);
+            }
+            completedQuests.Add(quest);
+            quest.questState = QuestState.QuestCompleted;
         }
-        completedQuests.Add(quest);
+        else
+        {
+            Debug.LogWarning("퀘스트를 완료할 수 없습니다. 진행 상황이 목표에 도달하지 않았습니다.");
+        }
     }
     public bool IsQuestCompleted(Quest quest)
     {

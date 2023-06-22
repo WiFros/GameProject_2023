@@ -86,7 +86,7 @@ public class NPC : MonoBehaviour
 
     public void UpdateNPCState()
     {
-        Debug.Log("Current NPC State: " + currentState);
+        //Debug.Log("Current NPC State: " + currentState);
         switch (currentState)
         {
             case NPCState.Normal:
@@ -104,8 +104,7 @@ public class NPC : MonoBehaviour
                 dialogueTrigger.dialogue = questInProgressDialogue;
                 break;
             case NPCState.QuestCompleted:
-                questIcon.SetActive(true);
-                questIconImage.sprite = questionMark;
+                questIcon.SetActive(false);
                 dialogueTrigger.dialogue = questCompletedDialogue;
                 break;
             case NPCState.QuestCompletable:
@@ -163,8 +162,8 @@ public class NPC : MonoBehaviour
             case NPCState.QuestCompletable:
                 dialogueTrigger.TriggerDialogue();
                 // 퀘스트 완료
-                inventory.RemoveItem(assignedQuest.requiredItem, assignedQuest.targetProgress);
-                assignedQuest.questState = QuestState.QuestCompleted;
+                //inventory.RemoveItem(assignedQuest.requiredItem, assignedQuest.targetProgress);
+                QuestManager.instance.CompleteQuest(assignedQuest);
                 break;
             case NPCState.QuestCompleted:
                 dialogueTrigger.TriggerDialogue();

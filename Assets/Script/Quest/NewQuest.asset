@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: b7dae780-fa40-4129-856a-e7778f1fb4ab
   name: 
-  description: 
-  isNew: 0
+  description: asdfasdf
+  isNew: 1
   isCompleted: 0
   targetProgress: 0
   rewards: []
-  prerequisiteQuests: []
+  prerequisiteQuests:
+  - 
   questDialogue:
     name: 
     sentences: []
