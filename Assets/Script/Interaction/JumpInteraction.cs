@@ -1,52 +1,72 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class JumpInteraction : Interactable
+public class JumpInteraction : MonoBehaviour
 {
-    public Transform jumpStartPoint;  // 점프 시작 지점
-    public Transform jumpEndPoint;    // 점프 종료 지점
-    public float jumpTime = 1f;       // 점프에 걸리는 시간
-
+    public JumpInteraction targetJumpPoint; // 대상 점프 지점
+    public TextMeshProUGUI text_Description;
+    public float jumpDuration = 1.0f; // 점프에 걸리는 시간 (초)
+    private bool isPlayerNear = false;
     private GameObject player;
-    private bool isJumping = false;
-
-    void Start()
+    
+    private void OnCollisionEnter(Collision other)
     {
-        // Find the player GameObject using its tag
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
-
-    public override void Interact(GameObject player)
-    {
-        // 점프를 시작합니다. 
-        if(!isJumping)
-            StartCoroutine(JumpRoutine(player));
-    }
-
-    private IEnumerator JumpRoutine(GameObject player)
-    {
-        isJumping = true;
-
-        Vector3 startPoint = jumpStartPoint.position;
-        Vector3 endPoint = jumpEndPoint.position;
-
-        // 곡선 움직임을 위한 중간 지점 계산
-        Vector3 midPoint = (startPoint + endPoint) / 2.0f + Vector3.up;
-
-        float timer = 0.0f;
-
-        while (timer <= jumpTime)
+        if (other.gameObject.CompareTag("Player")) // 태그를 이용해서 플레이어를 확인
         {
-            float t = timer / jumpTime;
-            Vector3 nextPos = Vector3.Lerp(startPoint, midPoint, t) * t + Vector3.Lerp(midPoint, endPoint, t) * (1 - t);
-            player.transform.position = nextPos;
-            timer += Time.deltaTime;
+            text_Description.text = "Press F to jump";
+            player = other.gameObject; // 충돌한 오브젝트를 플레이어로 설정
+            Debug.Log("Press F to jump");
+            isPlayerNear = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            text_Description.text = "";
+            isPlayerNear = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
+        {
+            // 점프를 시작합니다.
+            StartCoroutine(JumpToTarget());
+        }
+    }
+
+    private IEnumerator JumpToTarget()
+    {
+        Vector3 startPosition = player.transform.position; // 점프 시작 위치
+        Vector3 targetPosition = targetJumpPoint.transform.position; // 대상 위치는 대상 점프 지점의 위치입니다.
+        Vector3 jumpPeak = (startPosition + targetPosition) / 2.0f + Vector3.up * 2.0f; // 점프 곡선의 정점
+
+        float elapsedTime = 0;
+
+        while (elapsedTime < jumpDuration / 2.0f)
+        {
+            player.transform.position = Vector3.Lerp(startPosition, jumpPeak, elapsedTime / (jumpDuration / 2.0f));
+            elapsedTime += Time.deltaTime;
+
             yield return null;
         }
 
-        player.transform.position = endPoint;
-        isJumping = false;
+        elapsedTime = 0; // 경과 시간을 다시 0으로 초기화합니다.
+
+        while (elapsedTime < jumpDuration / 2.0f)
+        {
+            player.transform.position = Vector3.Lerp(jumpPeak, targetPosition, elapsedTime / (jumpDuration / 2.0f));
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        player.transform.position = targetPosition;
     }
 }
