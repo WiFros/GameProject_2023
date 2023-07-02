@@ -172,6 +172,8 @@ MonoBehaviour:
   itemImage: {fileID: 833518983065194305}
   text_Count: {fileID: 7693982892874004615}
   go_CountImage: {fileID: 7437244524348226916}
+  theInputNumber: {fileID: 0}
+  dropButton: {fileID: 0}
 --- !u!1 &7437244524348226916
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +319,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d8540e5f828d46919fb35733ed07957, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -381,6 +383,6 @@ MonoBehaviour:
   m_margin: {x: 105.967255, y: 10.883429, z: 44.102577, w: -9.695812}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
