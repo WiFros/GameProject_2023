@@ -264,6 +264,59 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    //soundType을 재생 중인 플레이어의 음향값을 수정
+    public void EditSound(SoundType soundType, bool mute = false, bool bypassEffects = false,
+        bool bypassListenerEffects = false, bool bypassRevervZones = false, int priority = 128,
+        float volume = 1, float pitch = 1, float panStero = 0, float spatialBlend = 0, float reverbZoneMix = 1)
+    {
+        if (soundType == SoundType.BackGroundMusic)
+        {
+            int count = 0;
+            foreach (SoundSource player in backgroundMusicPlayers)
+            {
+                if (player.isPlaying)
+                {
+                    player.mute = mute;
+                    player.bypassEffects = bypassEffects;
+                    player.bypassListenerEffects = bypassListenerEffects;
+                    player.bypassReverbZones = bypassRevervZones;
+                    player.loop = true;
+                    player.priority = priority;
+                    player.localVolume = volume;
+                    player.pitch = pitch;
+                    player.panStereo = panStero;
+                    player.spatialBlend = spatialBlend;
+                    player.reverbZoneMix = reverbZoneMix;
+                    count++;
+                }
+            }
+            Debug.Log(count + "개의 플레이어값을 수정하였습니다.");
+        }
+        else if (soundType == SoundType.SoundEffect)
+        {
+            int count = 0;
+            foreach (SoundSource player in soundEffectPlayers)
+            {
+                if (player.isPlaying)
+                {
+                    player.mute = mute;
+                    player.bypassEffects = bypassEffects;
+                    player.bypassListenerEffects = bypassListenerEffects;
+                    player.bypassReverbZones = bypassRevervZones;
+                    player.loop = false;
+                    player.priority = priority;
+                    player.localVolume = volume;
+                    player.pitch = pitch;
+                    player.panStereo = panStero;
+                    player.spatialBlend = spatialBlend;
+                    player.reverbZoneMix = reverbZoneMix;
+                    count++;
+                }
+            }
+            Debug.Log(count + "개의 플레이어값을 수정하였습니다.");
+        }
+    }
+
     //soundName을 재생 중인 플레이어를 멈춤
     public void StopSound(string soundName)
     {
