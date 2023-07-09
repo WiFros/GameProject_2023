@@ -18,6 +18,7 @@ public class Quest : ScriptableObject
     public string id;
     public string name;
     public string description;
+    public string longDescription;
     public bool isNew;
     public bool isCompleted;
     public int targetProgress;

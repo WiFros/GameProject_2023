@@ -15,6 +15,9 @@ MonoBehaviour:
   id: e638f589-13ae-414e-b0b8-35328cccbae3
   name: "\uD14C\uC2A4\uD2B8 1"
   description: "\uD14C\uC2A4\uD2B8 \uD018\uC2A4\uD2B8\uC785\uB2C8\uB2E4."
+  longDescription: "\uD14C\uC2A4\uD2B8\uC6A9 \uD018\uC2A4\uD2B8\uC785\uB2C8\uB2E4.
+    \uC774 \uACF5\uAC04\uC5D0\uB294 \uD018\uC2A4\uD2B8\uC5D0 \uB300\uD55C \uC0C1\uC138\uD55C
+    \uC124\uBA85\uC774 \uCD94\uAC00 \uB418\uC5B4\uC57C \uD569\uB2C8\uB2E4. "
   isNew: 0
   isCompleted: 0
   targetProgress: 5
@@ -23,4 +26,6 @@ MonoBehaviour:
   questDialogue:
     name: 
     sentences: []
+  questState: 0
+  requiredItem: {fileID: 0}
   _currentProgress: 1

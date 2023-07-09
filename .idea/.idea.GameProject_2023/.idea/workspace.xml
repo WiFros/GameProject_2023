@@ -5,43 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="퀘스트창 완성">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/PlayerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/PlayerController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Interaction/InteractiveObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Interaction/InteractiveObject.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Sound.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Sound/SoundTestScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/sounds/BGM.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo.otf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Main%20character.%20Reborn.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Main%20character.%20Reborn.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/mainCharacter.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/mainCharacter.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/DamageDealer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/DamageDealer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Manager/UIManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Manager/UIManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Western_T/barrel-old.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Western_T/barrel-old.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/EP1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/EP1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/InteractionDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/InteractionDetector.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/SimpleCharacterMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/SimpleCharacterMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/DestinationPoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/DestinationPoint.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/JumpInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interaction/JumpInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/JumpInteractionTrigger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/JumpInteractionTrigger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/ShowGizmo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/ShowGizmo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Inventory/Slot_Empty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Slot_Empty.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/List_Progressed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/List_Progressed.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/tree.FBX.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/tree.FBX.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/무제 폴더.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/무제 폴더/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/무제 폴더/test.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Utiles/NewBehaviourScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Utiles/NewBehaviourScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/SelectedSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/Slot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/QuestItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -178,7 +160,13 @@
       <workItem from="1687070319378" duration="8516000" />
       <workItem from="1687528925542" duration="597000" />
       <workItem from="1687531308725" duration="2965000" />
-      <workItem from="1687673050520" duration="4823000" />
+      <workItem from="1687673050520" duration="6424000" />
+      <workItem from="1687784284023" duration="335000" />
+      <workItem from="1687784683007" duration="703000" />
+      <workItem from="1687785545764" duration="1322000" />
+      <workItem from="1687787915127" duration="105000" />
+      <workItem from="1688032511201" duration="1014000" />
+      <workItem from="1688035319727" duration="4743000" />
     </task>
     <task id="LOCAL-00001" summary="퀘스트창 완성">
       <created>1682692886435</created>

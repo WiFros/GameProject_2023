@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject inventoryCanvas;
     public GameObject questCanvas;
+    public GameObject playerUI;
     private bool isActive = false;
 
     void Update()
@@ -14,11 +15,13 @@ public class GameManager : MonoBehaviour
         {
             isActive = !isActive;
             inventoryCanvas.SetActive(isActive);
+            playerUI.SetActive(!isActive);
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             isActive = !isActive;
             questCanvas.SetActive(isActive);
+            playerUI.SetActive(!isActive);
         }
     }
     public bool CanStartQuest(Quest quest)
