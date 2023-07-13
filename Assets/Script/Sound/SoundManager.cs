@@ -425,14 +425,4 @@ public class SoundManager : MonoBehaviour
             player.globalVolume = _soundEffectVolume * _masterVolume;
         }
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.N)) SoundManager.instance.PlaySound("ForestVillage", SoundType.BackGroundMusic);
-        if (Input.GetKeyDown(KeyCode.M)) SoundManager.instance.PlaySound("GoodMemory", SoundType.BackGroundMusic);
-
-        if (Input.GetKeyDown(KeyCode.J)) SoundManager.instance.EditSound("GoodMemory", volume:1f, pitch:3);
-        if (Input.GetKeyDown(KeyCode.K)) SoundManager.instance.EditSound("GoodMemory", volume:1f);
-        if (Input.GetKeyDown(KeyCode.Space)) SoundManager.instance.StopSound("GoodMemory");
-    }
 }

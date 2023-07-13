@@ -12,10 +12,11 @@ public class JumpInteraction : MonoBehaviour
     private bool isPlayerNear = false;
     private GameObject player;
     
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) // 태그를 이용해서 플레이어를 확인
         {
+            text_Description.gameObject.SetActive(true);
             text_Description.text = "Press F to jump";
             player = other.gameObject; // 충돌한 오브젝트를 플레이어로 설정
             Debug.Log("Press F to jump");
@@ -23,10 +24,11 @@ public class JumpInteraction : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            text_Description.gameObject.SetActive(false);
             text_Description.text = "";
             isPlayerNear = false;
         }
