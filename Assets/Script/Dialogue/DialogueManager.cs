@@ -9,11 +9,13 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     private Queue<string> sentences;
+    private SampleCameraManager scm;
     public GameObject dialogueBox;
     public Animator animator;
     void Start()
     {
         sentences = new Queue<string>();
+        scm = GameObject.Find("TestingCameraManager").GetComponent<SampleCameraManager>();
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -24,6 +26,16 @@ public class DialogueManager : MonoBehaviour
         
         nameText.text = dialogue.name;
         sentences.Clear();
+        
+        //말하는 캐릭터의 이름을 가져와 카메라 제어
+        if(nameText.text == "여름")
+        {
+            scm.CameraChaingeToPlayer();
+        }
+        else
+        {
+            scm.CameraChaingeToNPC(nameText.text);
+        }
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -58,6 +70,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void EndDialogue()
     {
+        scm.CameraChaingeToMain();
         animator.SetBool("IsOpen", false);
         dialogueBox.SetActive(false);
         //Debug.Log("End of converstion");
