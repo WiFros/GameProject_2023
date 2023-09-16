@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c0a71eedc044826abfd2ab6566e626, type: 3}
+  m_Name: '#1341'
+  m_EditorClassIdentifier: 
+  id: b11f526e-fb22-4bea-a1d9-125f6e80830a
+  name: "\uC9C0\uC6D0\uC774\uC758 \uB3C4\uC804"
+  description: "\uC9C0\uC6D0\uC774\uB294 \uC720\uB2C8\uD2F0\uB97C \uACF5\uBD80\uD55C\uB2E4."
+  longDescription: 
+  isNew: 0
+  isCompleted: 1
+  targetProgress: 0
+  rewards: []
+  prerequisiteQuests: []
+  questDialogue:
+    name: 
+    sentences: []
+  questState: 0
+  requiredItem: {fileID: 0}
+  _currentProgress: 0
