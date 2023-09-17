@@ -28,13 +28,14 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
         
         //말하는 캐릭터의 이름을 가져와 카메라 제어
-        if(nameText.text == "여름")
+        switch (nameText.text)
         {
-            scm.CameraChaingeToPlayer();
-        }
-        else
-        {
-            scm.CameraChaingeToNPC(nameText.text);
+            case "여름":
+                scm.CameraChaingeToCharacter(0);
+                break;
+            case "린다":
+                scm.CameraChaingeToCharacter(1);
+                break;
         }
 
         foreach (string sentence in dialogue.sentences)
