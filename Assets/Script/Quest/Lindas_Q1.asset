@@ -16,8 +16,8 @@ MonoBehaviour:
   name: "\uB9B0\uB2E4\uC758 \uBD80\uD0C1 #1"
   description: "\uB9B0\uB2E4\uAC00 \uD30C\uC778\uC560\uD50C\uC744 3\uAC1C \uBD80\uD0C1\uD588\uB2E4."
   longDescription: 
-  isNew: 0
-  isCompleted: 1
+  isNew: 1
+  isCompleted: 0
   targetProgress: 3
   rewards: []
   prerequisiteQuests: []
@@ -26,4 +26,5 @@ MonoBehaviour:
     sentences: []
   questState: 1
   requiredItem: {fileID: 11400000, guid: 94c1aa498e76347348f5f55abe858053, type: 2}
+  prerequisiteQuestObjects: []
   _currentProgress: 0

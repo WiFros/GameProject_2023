@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Zlaepek/Scenes/Default UI.unity
-    guid: 848be4e769043ff40a6399c8a320c907
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 0ad01439b0292034b92fc681640fec29,
       type: 2}

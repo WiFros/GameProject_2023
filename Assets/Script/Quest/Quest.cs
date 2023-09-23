@@ -28,9 +28,36 @@ public class Quest : ScriptableObject
     public QuestState questState;
     public Item requiredItem;
     public event Action OnQuestProgressChanged;
+    [HideInInspector]
+    public List<Quest> prerequisiteQuestObjects; // 실제 Quest 참조를 위한 리스트
+
     public Quest()
     {
         id = Guid.NewGuid().ToString();
+    }
+    // 선행 퀘스트를 가져오기
+    public void RetrievePrerequisiteQuests(List<Quest> allQuests)
+    {
+        prerequisiteQuestObjects = new List<Quest>();
+        foreach (string questID in prerequisiteQuests)
+        {
+            Quest quest = allQuests.Find(q => q.id == questID);
+            if (quest != null)
+            {
+                prerequisiteQuestObjects.Add(quest);
+            }
+        }
+    }
+    public bool ArePrerequisitesCompleted()
+    {
+        foreach (Quest quest in prerequisiteQuestObjects)
+        {
+            if (quest.questState != QuestState.QuestCompleted)
+            {
+                return false;
+            }
+        }
+        return true;
     }
     private void OnValidate()
     {

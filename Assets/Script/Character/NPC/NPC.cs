@@ -44,6 +44,7 @@ public class NPC : MonoBehaviour
     public Quest assignedQuest;
     public Inventory inventory;
 
+    public bool isDetecting = false;
     // 매 업데이트마다 호출되는 함수
     void Update()
     {
@@ -173,6 +174,30 @@ public class NPC : MonoBehaviour
                 // 일반 대화 로직을 구현하세요.
                 break;
         }
+    }
+    IEnumerator RandomTurn()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(1, 5)); // 1 ~ 5초 사이의 랜덤한 시간 동안 기다립니다.
+
+            if (Random.value > 0.5f) // 50% 확률로
+            {
+                TurnAround();
+            }
+        }
+    }
+    void TurnAround()
+    {
+        transform.Rotate(0, 180, 0); // NPC를 180도 회전
+        StartCoroutine(Detect());
+    }
+    IEnumerator Detect()
+    {
+        yield return new WaitForSeconds(0.5f); // 0.5초의 딜레이 후 감지 시작
+        isDetecting = true;
+        yield return new WaitForSeconds(2); // 2초 동안 감지 상태 유지
+        isDetecting = false;
     }
     public void TriggerDialogue()
     {

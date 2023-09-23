@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public bool isMoving = false;
     public int maxHealth = 10;
     public int currentHealth;
     public float invincibilityDuration = 2.0f;  // 무적 시간을 조절할 수 있는 변수
@@ -15,6 +16,13 @@ public class Player : MonoBehaviour
     // 이 클래스를 위한 싱글톤 인스턴스
     public static Player Instance { get; private set; }
 
+    void Update()
+    {
+        if (Input.anyKey) // 키 입력이 있다면
+            isMoving = true;
+        else
+            isMoving = false;
+    }
     void Awake()
     {
         if (Instance != null && Instance != this)

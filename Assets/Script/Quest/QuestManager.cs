@@ -24,8 +24,15 @@ public class QuestManager : MonoBehaviour
         completedQuests = new HashSet<Quest>();
         inventory.OnItemAdded += UpdateQuestsOnItemAdded;
         inventory.OnItemRemoved += UpdateQuestsOnItemRemoved;
+        foreach (Quest quest in quests)
+        {
+            quest.RetrievePrerequisiteQuests(quests);
+        }
     }
-
+    public bool CanStartQuest(Quest quest)
+    {
+        return quest.ArePrerequisitesCompleted();
+    }
     private void UpdateQuestsOnItemAdded(Item item, int amount)
     {
         // Loop through the quests to update them.
