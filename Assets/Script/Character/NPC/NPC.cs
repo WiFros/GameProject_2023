@@ -43,7 +43,9 @@ public class NPC : MonoBehaviour
     //public QuestManager questManager;
     public Quest assignedQuest;
     public Inventory inventory;
-
+    public bool isInMiniGame = false;  // 미니게임 중인지 확인
+    public float originalFOV;  // 원래의 시야 범위
+    public float miniGameFOV;  // 미니게임 중의 시야 범위
     public bool isDetecting = false;
     // 매 업데이트마다 호출되는 함수
     void Update()
@@ -187,6 +189,7 @@ public class NPC : MonoBehaviour
             }
         }
     }
+    
     void TurnAround()
     {
         transform.Rotate(0, 180, 0); // NPC를 180도 회전

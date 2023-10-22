@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,7 @@ public class UIManager : MonoBehaviour
     public Slider soundFxSlider;
     public Slider backgroundMusicSlider;
     public Toggle vibrationToggle;
-
+    public TextMeshProUGUI actionText;
     public bool PushNotificationEnabled => pushNotificationToggle.isOn;
     public float SoundFxLevel => soundFxSlider.value;
     public float BackgroundMusicLevel => backgroundMusicSlider.value;
@@ -34,9 +35,9 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
 //        pushNotificationToggle.isOn = PlayerPrefs.GetInt("PushNotification", 1) == 1;
-        soundFxSlider.value = PlayerPrefs.GetFloat("SoundFx", 1f);
-        backgroundMusicSlider.value = PlayerPrefs.GetFloat("BackgroundMusic", 1f);
-        vibrationToggle.isOn = PlayerPrefs.GetInt("Vibration", 1) == 1;
+        //soundFxSlider.value = PlayerPrefs.GetFloat("SoundFx", 1f);
+        //backgroundMusicSlider.value = PlayerPrefs.GetFloat("BackgroundMusic", 1f);
+        //vibrationToggle.isOn = PlayerPrefs.GetInt("Vibration", 1) == 1;
     }
 
     public void OnPushNotificationToggleChanged()

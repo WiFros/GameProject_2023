@@ -27,13 +27,13 @@ public class DialogueManager : MonoBehaviour
         nameText.text = dialogue.name;
         sentences.Clear();
         
-        //¸»ÇÏ´Â Ä³¸¯ÅÍÀÇ ÀÌ¸§À» °¡Á®¿Í Ä«¸Þ¶ó Á¦¾î
+        //ï¿½ï¿½ï¿½Ï´ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½
         switch (nameText.text)
         {
-            case "¿©¸§":
+            case "":
                 scm.CameraChaingeToCharacter(0);
                 break;
-            case "¸°´Ù":
+            case " ":
                 scm.CameraChaingeToCharacter(1);
                 break;
         }

@@ -5,42 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="퀘스트창 완성">
-      <change afterPath="$PROJECT_DIR$/Assets/Scene/2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scene/2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scene/size.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scene/size.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Boss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Boss/PatternController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Boss/PatternController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Boss/PhaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Boss/PhaseController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Boss/PuzzleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Boss/PuzzleController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/NPC/FieldOfView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/NPC/FieldOfView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPCFieldOfView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPCFieldOfView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Manager/MiniGameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Manager/MiniGameManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Manager/MiniGameSubManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Manager/MiniGameSubManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Minigame.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/#1341.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/#1341.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Quest/Test_Q5.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Font/Dovemayo_gothic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BasicMaleDefault.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Object/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/BasicMaleDefault.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene/EP1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/EP1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/MeshCombinerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/MeshCombinerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/RemoveColliders.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/RemoveColliders.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Minigame/MinigameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Minigame/MinigameManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPC.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/Lindas_Q1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/Lindas_Q1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/Quest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Quest/QuestManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPCFieldOfView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Character/NPC/NPCFieldOfView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Dialogue/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/TextMesh Pro/Fonts/dovemayo SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,9 +65,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2K1sSGF4GVbIz0KfJ5jAulBtjDW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -100,27 +76,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/jeoungyoung_park/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/jeoungyoung_park/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/jeoungyoung_park/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

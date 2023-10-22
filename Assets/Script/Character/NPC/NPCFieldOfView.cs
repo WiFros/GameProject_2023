@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCFieldOfView : MonoBehaviour
@@ -9,24 +10,53 @@ public class NPCFieldOfView : MonoBehaviour
     public LayerMask obstacleMask;
     public bool visualizeFieldOfView;
     private GameObject player;
+
+    private Vector3 initialPlayerPosition;
+    private bool isGameActive = true; 
+    // visibleTargets 리스트 추가
+    public List<Transform> visibleTargets = new List<Transform>();
+
     public enum NPCState { Idle, Detected }
     public NPCState currentState = NPCState.Idle;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        initialPlayerPosition = player.transform.position;
     }
 
     private void Update()
     {
         CheckFieldOfView();
+        
+        
+    }
+    private void LoseGame()
+    {
+        Debug.Log("Game Lost!");
+        isGameActive = false;
+        player.transform.position = initialPlayerPosition; // 플레이어를 시작 위치로 재설정
     }
 
+    private void EndMiniGame()
+    {
+        Debug.Log("MiniGame Ended!");
+        isGameActive = false;
+        // 추가적인 게임 종료 로직
+    }
+    private void CheckPlayerMovement()
+    {
+        if (Input.anyKey) // 어떤 키라도 누르면
+        {
+            LoseGame();
+        }
+    }
     private void CheckFieldOfView()
     {
+        visibleTargets.Clear(); // 매 Update()에서 리스트를 클리어
         Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
 
-        bool playerInSight = false; // 이 변수를 추가합니다.
+        bool playerInSight = false;
 
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
@@ -39,9 +69,11 @@ public class NPCFieldOfView : MonoBehaviour
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask))
                 {
+                    visibleTargets.Add(target); // 시야 내의 대상을 리스트에 추가
+
                     if (target.gameObject == player)
                     {
-                        playerInSight = true; // 플레이어를 감지했다면 true로 설정합니다.
+                        playerInSight = true;
                         currentState = NPCState.Detected;
                         LookAtPlayer();
                     }
@@ -49,9 +81,9 @@ public class NPCFieldOfView : MonoBehaviour
             }
         }
 
-        if (!playerInSight) // 플레이어를 감지하지 못했다면
+        if (!playerInSight)
         {
-            currentState = NPCState.Idle; // 상태를 Idle로 변경합니다.
+            currentState = NPCState.Idle;
         }
         
     }
@@ -83,5 +115,16 @@ public class NPCFieldOfView : MonoBehaviour
             angleInDegrees += transform.eulerAngles.y;
         }
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
+    }
+
+    // 새로운 판단 로직 메소드
+    public bool IsTargetVisible(Transform target)
+    {
+        return visibleTargets.Contains(target);
+    }
+
+    public bool IsPlayerInSight()
+    {
+        return IsTargetVisible(player.transform);
     }
 }
