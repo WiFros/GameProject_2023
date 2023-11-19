@@ -43,6 +43,7 @@ public class TouchOnOff : MonoBehaviour
                 if (touches[i] == gameObject)
                 {
                     touchlight[i] = false;
+                    bosspattern.RunBoss();
                     break;
                 }
             }
