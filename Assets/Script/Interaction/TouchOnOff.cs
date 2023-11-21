@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TouchOnOff : MonoBehaviour
 {
-    public bool[] touchlight = new bool[6];
-    public GameObject[] touches = new GameObject[6];
+    public bool touchlight;
+    public int touchnum;
 
     PatternController bosspattern;
 
@@ -27,25 +27,17 @@ public class TouchOnOff : MonoBehaviour
     {
         if(other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.F))
         {
-            for (int i = 0; i < touches.Length; i++)
+            if (!touchlight)
             {
-                if(touches[i] == gameObject)
-                {
-                    touchlight[i] = true;
-                    bosspattern.SpawnBoss(touches[i]);
-                    break;
-                }
+                touchlight = true;
+                bosspattern.SpawnBoss(touchnum);
             }
         }else if(other.gameObject.tag == "Boss")
         {
-            for (int i = 0; i < touches.Length; i++)
+            if (touchlight)
             {
-                if (touches[i] == gameObject)
-                {
-                    touchlight[i] = false;
-                    bosspattern.RunBoss();
-                    break;
-                }
+                touchlight = false;
+                bosspattern.RunBoss();
             }
         }
     }
