@@ -3,9 +3,9 @@ using UnityEngine;
 public class PatternController : MonoBehaviour
 {
     public Vector3[] spawn = new Vector3[12]; //배열의 크기는 햇불의 갯수, 스폰 되는 장소 저장
-    Vector3[] spawnsequence = new Vector3[3];
     Vector3 targetposition;
     public bool bossspawn = false;
+    private bool[] targetarr = new bool[4];
     public int target;
     public GameObject player;
 
@@ -57,9 +57,45 @@ public class PatternController : MonoBehaviour
         return sequence + touchnum * 3; //스폰지점의 배열 인덱스
     }
     
-    public void SpawnSequence()
+    public void TouchLightLogic(int touchnum, bool touchlight)
     {
+        if (touchlight)
+        {
+            targetarr[touchnum] = true;
+        }
+        else
+        {
+            targetarr[touchnum] = false;
+        }
+    }
 
+    public void SpawnLogic()
+    {
+        int b = 0;
+        for (int i = 0; i < targetarr.Length; i++)
+        {
+            if (targetarr[i])
+            {
+                break;
+            }
+            if (!targetarr[i])
+            {
+                b += 1;
+            }
+        }
+        if (b == 4)
+        {
+            return;
+        }
+        while (true)
+        {
+            int a = Random.Range(0, 4);
+            if(targetarr[a] == true)
+            {
+                SpawnBoss(a);
+                break;
+            }
+        }
     }
 
     public void SpawnBoss(int touchnum)
