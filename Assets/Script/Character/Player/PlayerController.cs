@@ -12,7 +12,10 @@ public class PlayerController : MonoBehaviour
     private Animator animator; // Animator 컴포넌트
     private bool isJumping = false;
     private Vector3 jumpDirection;
-
+    
+    public Transform groundCheck; // 땅 체크를 위한 Transform
+    public float groundCheckRadius = 0.5f; // 땅 체크 반경
+    public LayerMask groundLayer; // 지면 LayerMask
     
     private bool isHoldingObject = false;
     private InteractiveObject heldObject;
@@ -30,6 +33,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
+
         if (isJumping)
         {
             // Move the player towards the jump destination
@@ -141,22 +146,6 @@ public class PlayerController : MonoBehaviour
     {
         isJumping = true;
         jumpDirection = destination;
-        animator.SetTrigger("isJumping"); // 점프 애니메이션 활성화
-    }
-
-    void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground") // 충돌한 오브젝트가 "Ground" 태그인 경우
-        {
-            isGrounded = true; // 땅에 닿아있음
-        }
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground") // 충돌한 오브젝트가 "Ground" 태그인 경우
-        {
-            isGrounded = false; // 땅에서 벗어남
-        }
+        //animator.SetTrigger("isJumping"); // 점프 애니메이션 활성화
     }
 }
