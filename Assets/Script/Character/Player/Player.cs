@@ -13,27 +13,22 @@ public class Player : MonoBehaviour
     private Renderer playerRenderer;  // 플레이어 Renderer
     private Color originalColor;  // 플레이어 원래 색상
     private Rigidbody rb;  // Rigidbody 컴포넌트
+
     // 이 클래스를 위한 싱글톤 인스턴스
     public static Player Instance { get; private set; }
 
-    void Update()
-    {
-        if (Input.anyKey) // 키 입력이 있다면
-            isMoving = true;
-        else
-            isMoving = false;
-    }
     void Awake()
     {
+        // 싱글톤 인스턴스 체크 및 할당
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
+            return;
         }
-        else
-        {
-            Instance = this;
-        }
+        Instance = this;
+        DontDestroyOnLoad(this.gameObject);  // 씬 전환시에도 인스턴스 유지
     }
+
     void Start()
     {
         maxHealth = 10;
@@ -43,6 +38,14 @@ public class Player : MonoBehaviour
         playerRenderer = GetComponentInChildren<Renderer>();
         originalColor = playerRenderer.material.color;
         rb = GetComponent<Rigidbody>(); // Rigidbody 컴포넌트 가져오기
+    }
+
+    void Update()
+    {
+        if (Input.anyKey) // 키 입력이 있다면
+            isMoving = true;
+        else
+            isMoving = false;
     }
 
 
