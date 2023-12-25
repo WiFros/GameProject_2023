@@ -30,13 +30,14 @@ public class TouchOnOff : MonoBehaviour
             if (!touchlight)
             {
                 touchlight = true;
-                bosspattern.SpawnBoss(touchnum);
+                bosspattern.TouchOnOffControl(touchnum, touchlight);
             }
         }else if(other.gameObject.tag == "Boss")
         {
             if (touchlight)
             {
                 touchlight = false;
+                bosspattern.TouchOnOffControl(touchnum, touchlight);
                 bosspattern.RunBoss();
             }
         }
