@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dd3f59d-4cbf-4162-b82d-cca077d94bff" name="Changes" comment="퀘스트창 완성">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject_2023/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene/EP1_Copy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/EP1_Copy.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +186,8 @@
       <workItem from="1701581315076" duration="34000" />
       <workItem from="1701581380756" duration="797000" />
       <workItem from="1701582196680" duration="2000" />
+      <workItem from="1701582268694" duration="3549000" />
+      <workItem from="1704015724367" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="퀘스트창 완성">
       <created>1682692886435</created>
@@ -221,16 +224,15 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Script/Character/Player/PlayerController.cs</url>
           <line>71</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Script/Character/Player/PlayerController.cs" initialLine="71" isMultiMethodBreakpoint="true">
-            <option name="multiMethodBreakpoint" value="true" />
+          <properties documentPath="$PROJECT_DIR$/Assets/Script/Character/Player/PlayerController.cs" initialLine="71" containingFunctionPresentation="Method 'Update'">
             <startOffsets>
-              <option value="-1" />
+              <option value="2477" />
             </startOffsets>
             <endOffsets>
-              <option value="-1" />
+              <option value="2478" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
